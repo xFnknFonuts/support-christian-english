@@ -12,79 +12,286 @@
       color: #2c2c2c;
       min-height: 100vh;
     }
+
+    /* Header */
     .hero {
       background: linear-gradient(135deg, #1a3a5c 0%, #2d6a9f 100%);
       color: white;
       padding: 48px 24px 40px;
       text-align: center;
     }
-    .hero .cross { font-size: 28px; margin-bottom: 12px; opacity: 0.8; }
-    .hero h1 { font-size: 2rem; font-weight: normal; letter-spacing: 0.02em; margin-bottom: 8px; }
-    .hero .subtitle { font-size: 1rem; opacity: 0.85; font-style: italic; }
-    .container { max-width: 600px; margin: 0 auto; padding: 32px 20px 60px; }
+    .hero .cross {
+      font-size: 28px;
+      margin-bottom: 12px;
+      opacity: 0.8;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
+    }
+    .hero .subtitle {
+      font-size: 1rem;
+      opacity: 0.85;
+      font-style: italic;
+    }
+
+    /* Main content */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    /* Message card */
     .message-card {
-      background: white; border-radius: 12px; padding: 28px; margin-bottom: 28px;
-      border-left: 4px solid #2d6a9f; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-      line-height: 1.75; font-size: 0.97rem; color: #3a3a3a;
+      background: white;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 28px;
+      border-left: 4px solid #2d6a9f;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      line-height: 1.75;
+      font-size: 0.97rem;
+      color: #3a3a3a;
     }
+
+    /* Progress section */
     .progress-section {
-      background: white; border-radius: 12px; padding: 28px;
-      margin-bottom: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      background: white;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
-    .progress-section h2 { font-size: 1.1rem; font-weight: normal; color: #1a3a5c; margin-bottom: 18px; text-align: center; }
-    .progress-bar-wrap { background: #e8eef4; border-radius: 99px; height: 22px; overflow: hidden; margin-bottom: 10px; }
-    .progress-bar-fill { background: linear-gradient(90deg, #2d6a9f, #4a9fd4); height: 100%; border-radius: 99px; transition: width 1s ease; }
-    .progress-labels { display: flex; justify-content: space-between; font-size: 0.85rem; color: #666; margin-bottom: 20px; }
-    .progress-labels .raised { font-weight: bold; color: #1a3a5c; }
-    .stats-row { display: flex; justify-content: center; gap: 36px; padding-top: 16px; border-top: 1px solid #f0f0f0; }
-    .stat { text-align: center; }
-    .stat .num { font-size: 1.6rem; font-weight: bold; color: #2d6a9f; display: block; }
-    .stat .lbl { font-size: 0.78rem; color: #888; text-transform: uppercase; letter-spacing: 0.08em; }
+    .progress-section h2 {
+      font-size: 1.1rem;
+      font-weight: normal;
+      color: #1a3a5c;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .progress-bar-wrap {
+      background: #e8eef4;
+      border-radius: 99px;
+      height: 22px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .progress-bar-fill {
+      background: linear-gradient(90deg, #2d6a9f, #4a9fd4);
+      height: 100%;
+      border-radius: 99px;
+      transition: width 1s ease;
+    }
+    .progress-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .progress-labels .raised {
+      font-weight: bold;
+      color: #1a3a5c;
+    }
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+      padding-top: 16px;
+      border-top: 1px solid #f0f0f0;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat .num {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #2d6a9f;
+      display: block;
+    }
+    .stat .lbl {
+      font-size: 0.78rem;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* CTA buttons */
     .cta-section {
-      background: white; border-radius: 12px; padding: 28px;
-      margin-bottom: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); text-align: center;
+      background: white;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      text-align: center;
     }
-    .cta-section h2 { font-size: 1.1rem; font-weight: normal; color: #1a3a5c; margin-bottom: 6px; }
-    .cta-section .tagline { font-size: 0.87rem; color: #888; margin-bottom: 22px; }
-    .btn-group { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 20px; }
-    .btn { display: inline-block; padding: 13px 28px; border-radius: 8px; font-size: 0.95rem; text-decoration: none; font-family: Georgia, serif; cursor: pointer; border: none; transition: opacity 0.15s; }
+    .cta-section h2 {
+      font-size: 1.1rem;
+      font-weight: normal;
+      color: #1a3a5c;
+      margin-bottom: 6px;
+    }
+    .cta-section .tagline {
+      font-size: 0.87rem;
+      color: #888;
+      margin-bottom: 22px;
+    }
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 13px 28px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      text-decoration: none;
+      font-family: Georgia, serif;
+      cursor: pointer;
+      border: none;
+      transition: opacity 0.15s;
+    }
     .btn:hover { opacity: 0.88; }
-    .btn-venmo { background: #008CFF; color: white; }
-    .btn-zelle { background: #6d1ed4; color: white; }
-    .btn-form { background: #1a3a5c; color: white; width: 100%; text-align: center; }
-    .payment-info { font-size: 0.83rem; color: #999; margin-top: 4px; }
+    .btn-venmo {
+      background: #008CFF;
+      color: white;
+    }
+    .btn-zelle {
+      background: #6d1ed4;
+      color: white;
+    }
+    .btn-form {
+      background: #1a3a5c;
+      color: white;
+      width: 100%;
+      text-align: center;
+    }
+    .payment-info {
+      font-size: 0.83rem;
+      color: #999;
+      margin-top: 4px;
+    }
+
+    /* Prayer section */
     .prayer-section {
-      background: #f7f3ef; border-radius: 12px; padding: 24px 28px;
-      margin-bottom: 28px; border: 1px solid #e8ddd0; text-align: center;
+      background: #f7f3ef;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      border: 1px solid #e8ddd0;
+      text-align: center;
     }
     .prayer-section .icon { font-size: 1.5rem; margin-bottom: 8px; }
-    .prayer-section p { font-size: 0.93rem; line-height: 1.7; color: #5a4a3a; font-style: italic; }
-    footer { text-align: center; font-size: 0.8rem; color: #bbb; padding-top: 12px; }
-    #admin-toggle { display: block; margin: 40px auto 0; background: none; border: none; color: #ccc; font-size: 0.75rem; cursor: pointer; font-family: Georgia, serif; }
+    .prayer-section p {
+      font-size: 0.93rem;
+      line-height: 1.7;
+      color: #5a4a3a;
+      font-style: italic;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #bbb;
+      padding-top: 12px;
+    }
+
+    /* Admin panel */
+    #admin-toggle {
+      display: block;
+      margin: 40px auto 0;
+      background: none;
+      border: none;
+      color: #ccc;
+      font-size: 0.75rem;
+      cursor: pointer;
+      font-family: Georgia, serif;
+    }
     #admin-toggle:hover { color: #999; }
-    #admin-panel { display: none; background: white; border-radius: 12px; padding: 24px; margin-top: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); border: 1px solid #e0e0e0; }
-    #admin-panel h3 { font-size: 0.95rem; margin-bottom: 16px; color: #333; }
-    #admin-panel label { display: block; font-size: 0.82rem; color: #666; margin-bottom: 4px; margin-top: 12px; }
-    #admin-panel input { width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.9rem; font-family: Georgia, serif; }
-    #admin-panel button { margin-top: 16px; padding: 10px 20px; background: #1a3a5c; color: white; border: none; border-radius: 6px; cursor: pointer; font-family: Georgia, serif; font-size: 0.9rem; }
-    #admin-msg { margin-top: 10px; font-size: 0.82rem; color: #2d6a9f; }
-    #pw-prompt { margin-bottom: 16px; }
-    @media (max-width: 480px) { .hero h1 { font-size: 1.5rem; } .btn { width: 100%; } }
+    #admin-panel {
+      display: none;
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      border: 1px solid #e0e0e0;
+    }
+    #admin-panel h3 {
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+      color: #333;
+    }
+    #admin-panel label {
+      display: block;
+      font-size: 0.82rem;
+      color: #666;
+      margin-bottom: 4px;
+      margin-top: 12px;
+    }
+    #admin-panel input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-family: Georgia, serif;
+    }
+    #admin-panel button {
+      margin-top: 16px;
+      padding: 10px 20px;
+      background: #1a3a5c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: Georgia, serif;
+      font-size: 0.9rem;
+    }
+    #admin-msg {
+      margin-top: 10px;
+      font-size: 0.82rem;
+      color: #2d6a9f;
+    }
+    #pw-prompt {
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.5rem; }
+      .btn { width: 100%; }
+    }
   </style>
 </head>
 <body>
+
   <div class="hero">
     <div class="cross">✝</div>
     <h1>Support for Christian English</h1>
     <p class="subtitle">"Bear one another's burdens, and so fulfill the law of Christ." — Galatians 6:2</p>
   </div>
+
   <div class="container">
+
+    <!-- Message -->
     <div class="message-card">
-      <p>Hi everyone,</p><br />
-      <p>Many of you know Christian — a professional ballet dancer, a man of deep faith, and someone who has always shown up for the people he loves. He's navigating an unexpected financial burden stemming from an employment dispute with a former company. Out of respect for the legal process, we aren't able to share specifics — but the situation is real, and the need is genuine.</p><br />
-      <p>Christian has handled this with integrity and grace from the beginning. If you feel led to help lighten the load, any contribution — no matter the size — would be a tangible expression of love and support during one of the harder seasons of his life. Prayers are equally valued and never go unnoticed.</p><br />
+      <p>Hi everyone,</p>
+      <br />
+      <p>Many of you know Christian — a professional ballet dancer, a man of deep faith, and someone who has always shown up for the people he loves. He's navigating an unexpected financial burden stemming from an employment dispute with a former company. Out of respect for the legal process, we aren't able to share specifics — but the situation is real, and the need is genuine.</p>
+      <br />
+      <p>Christian has handled this with integrity and grace from the beginning. If you feel led to help lighten the load, any contribution — no matter the size — would be a tangible expression of love and support during one of the harder seasons of his life. Prayers are equally valued and never go unnoticed.</p>
+      <br />
       <p>We'll be sending personal thank-you notes once this chapter closes. <em>Thank you for being the kind of people who show up.</em></p>
     </div>
+
+    <!-- Progress -->
     <div class="progress-section">
       <h2>Community Support</h2>
       <div class="progress-bar-wrap">
@@ -95,10 +302,18 @@
         <span id="goalAmt">Goal: $5,300</span>
       </div>
       <div class="stats-row">
-        <div class="stat"><span class="num" id="supporterCount">0</span><span class="lbl">Contributors</span></div>
-        <div class="stat"><span class="num" id="prayerCount">0</span><span class="lbl">Praying</span></div>
+        <div class="stat">
+          <span class="num" id="supporterCount">0</span>
+          <span class="lbl">Contributors</span>
+        </div>
+        <div class="stat">
+          <span class="num" id="prayerCount">0</span>
+          <span class="lbl">Praying</span>
+        </div>
       </div>
     </div>
+
+    <!-- CTA -->
     <div class="cta-section">
       <h2>Give or Pray</h2>
       <p class="tagline">Every amount helps. Every prayer matters.</p>
@@ -110,12 +325,21 @@
       <br />
       <a class="btn btn-form" id="formLink" href="https://docs.google.com/forms/d/1QMEcPTVEMwMV4UtdfQ9CNvyCoqY11RdPZ7E5T4sey9g/viewform" target="_blank">Fill Out the Support Form (or Prayer Only)</a>
     </div>
+
+    <!-- Prayer -->
     <div class="prayer-section">
       <div class="icon">🙏</div>
       <p>Not in a position to give financially? Your prayers are a genuine gift. Fill out the support form above — there's a "Prayer only" option — and Christian will know you're standing with him.</p>
     </div>
-    <footer>This page is maintained by Christian's support network. &copy; 2026</footer>
+
+    <footer>
+      This page is maintained by Christian's support network. &copy; 2026
+    </footer>
+
+    <!-- Admin toggle -->
     <button id="admin-toggle" onclick="toggleAdminPrompt()">admin</button>
+
+    <!-- Admin panel -->
     <div id="admin-panel">
       <div id="pw-prompt">
         <h3>Admin Update</h3>
@@ -140,9 +364,19 @@
         <div id="admin-msg"></div>
       </div>
     </div>
+
   </div>
+
   <script>
-    let state = { raised: 720, goal: 5300, supporters: 5, prayers: 0 };
+    // --- State ---
+    let state = {
+      raised: 1020,
+      goal: 5300,
+      supporters: 6,
+      prayers: 0
+    };
+
+    // --- Render ---
     function render() {
       const pct = Math.min(100, Math.round((state.raised / state.goal) * 100));
       document.getElementById('progressFill').style.width = pct + '%';
@@ -151,12 +385,18 @@
       document.getElementById('supporterCount').textContent = state.supporters;
       document.getElementById('prayerCount').textContent = state.prayers;
     }
+
+    // Animate progress bar on load
     window.addEventListener('load', () => { render(); });
+
+    // --- Admin ---
     const ADMIN_PW = 'hope2026';
+
     function toggleAdminPrompt() {
       const panel = document.getElementById('admin-panel');
       panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
     }
+
     function checkPw() {
       const pw = document.getElementById('adminPw').value;
       if (pw === ADMIN_PW) {
@@ -170,16 +410,26 @@
         document.getElementById('pw-error').textContent = 'Incorrect password.';
       }
     }
+
     function applyUpdate() {
-      state.raised = parseInt(document.getElementById('inputRaised').value) || state.raised;
-      state.supporters = parseInt(document.getElementById('inputSupporters').value) || state.supporters;
-      state.prayers = parseInt(document.getElementById('inputPrayers').value) || state.prayers;
-      state.goal = parseInt(document.getElementById('inputGoal').value) || state.goal;
+      const r = parseInt(document.getElementById('inputRaised').value) || state.raised;
+      const s = parseInt(document.getElementById('inputSupporters').value) || state.supporters;
+      const p = parseInt(document.getElementById('inputPrayers').value) || state.prayers;
+      const g = parseInt(document.getElementById('inputGoal').value) || state.goal;
       const fl = document.getElementById('inputFormLink').value.trim();
-      if (fl) document.getElementById('formLink').href = fl;
+
+      state.raised = r;
+      state.supporters = s;
+      state.prayers = p;
+      state.goal = g;
+      if (fl) {
+        document.getElementById('formLink').href = fl;
+      }
+
       render();
       document.getElementById('admin-msg').textContent = 'Updated! Remember to re-host this file to save changes permanently.';
     }
   </script>
+
 </body>
 </html>
